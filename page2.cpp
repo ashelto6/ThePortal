@@ -6,14 +6,16 @@ Page2::Page2(QWidget *parent) : QWidget(parent), ui(new Ui::Page2)
     ui->setupUi(this);
 
     //adding pages to stacked widget
-    ui->stackedWidget->addWidget(&_p2Landing);
-    ui->stackedWidget->addWidget(&_p2Settings);
+    ui->stackedWidget->addWidget(&_p2Landing); // index0
+    ui->stackedWidget->addWidget(&_p2Settings); // index1
+    ui->stackedWidget->addWidget(&_p2Predictions); // index2
 
     //connections for returning to the landing page from an app
     connect(&_p2Settings, SIGNAL(backToLandingFromSettingsClicked()), this, SLOT(toLanding()));
 
     //connections for going into an app
     connect(&_p2Landing, SIGNAL(settingsClicked()), this, SLOT(toSettings()));
+    connect(&_p2Landing, SIGNAL(predictionsClicked()), this, SLOT(toPredictions()));
 
     //connections for going home from a page of page2 stackedwidget
     connect(&_p2Landing, SIGNAL(homeFromLandingClicked()), this, SLOT(backHome()));
@@ -43,6 +45,11 @@ Page2::~Page2()
 void Page2::backHome()
 {
     emit homeClicked();
+}
+
+void Page2::toPredictions()
+{
+    ui->stackedWidget->setCurrentIndex(2);
 }
 
 void Page2::toSettings()

@@ -746,12 +746,12 @@ QDateTimeEdit::drop-down {
          </layout>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="app4">
+         <layout class="QVBoxLayout" name="predictions">
           <property name="spacing">
            <number>0</number>
           </property>
           <item>
-           <widget class="QPushButton" name="app4Button">
+           <widget class="QPushButton" name="predictionsButton">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
               <horstretch>0</horstretch>
@@ -764,7 +764,7 @@ QDateTimeEdit::drop-down {
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="app4Label">
+           <widget class="QLabel" name="predictionsLabel">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
               <horstretch>0</horstretch>
@@ -783,7 +783,7 @@ QDateTimeEdit::drop-down {
              </font>
             </property>
             <property name="text">
-             <string/>
+             <string>Predictions</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignHCenter|Qt::AlignTop</set>

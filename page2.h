@@ -6,6 +6,7 @@
 //.h files for each page of stackedwidget
 #include "p2landing.h"
 #include "p2settings.h"
+#include "p2predictions.h"
 
 namespace Ui {
 class Page2;
@@ -36,6 +37,7 @@ signals:
 
 private slots:
     void backHome();
+    void toPredictions();
     void toSettings();
     void toLanding();
 
@@ -55,6 +57,7 @@ private:
     Ui::Page2 *ui;
     p2Landing _p2Landing;
     p2Settings _p2Settings;
+    p2Predictions _p2Predictions;
 
     void setBackground(int);
 };

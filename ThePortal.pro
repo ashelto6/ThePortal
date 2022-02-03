@@ -20,6 +20,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     p2landing.cpp \
+    p2predictions.cpp \
     p2settings.cpp \
     page2.cpp
 
@@ -27,6 +28,7 @@ HEADERS += \
     home.h \
     mainwindow.h \
     p2landing.h \
+    p2predictions.h \
     p2settings.h \
     page2.h
 
@@ -34,6 +36,7 @@ FORMS += \
     home.ui \
     mainwindow.ui \
     p2landing.ui \
+    p2predictions.ui \
     p2settings.ui \
     page2.ui
 
@@ -41,3 +44,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    assets.qrc

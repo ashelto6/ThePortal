@@ -11,7 +11,7 @@ p2Landing::p2Landing(QWidget *parent) : QWidget(parent), ui(new Ui::p2Landing)
     setIcons();
 
     //getting current date & time
-    connect(&_Home, SIGNAL(newDateTime()), this, SLOT(updateDateTime()));
+    connect(&_Home, SIGNAL(newDateTime()), this, SLOT(updateLandingDateTime()));
 }
 
 p2Landing::~p2Landing()
@@ -29,7 +29,12 @@ void p2Landing::on_settingsButton_clicked()
     emit settingsClicked();
 }
 
-void p2Landing::updateDateTime()
+void p2Landing::on_predictionsButton_clicked()
+{
+    emit predictionsClicked();
+}
+
+void p2Landing::updateLandingDateTime()
 {
     ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
     emit dateTimeUpdate();
@@ -44,4 +49,10 @@ void p2Landing::setIcons()
     //setting app icons
     ui->settingsButton->setIcon(QIcon("/home/pi/portalImages/settings-icon.jpg"));
     ui->settingsButton->setIconSize(QSize(115, 115));
+
+    //predictions app icons
+    ui->predictionsButton->setIcon(QIcon("/home/pi/portalImages/predictions-icon.png"));
+    ui->predictionsButton->setIconSize(QSize(100, 100));
 }
+
+

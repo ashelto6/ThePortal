@@ -1,4 +1,4 @@
-#ifndef P2LANDING_H
+﻿#ifndef P2LANDING_H
 #define P2LANDING_H
 
 #include <QWidget>
@@ -20,6 +20,7 @@ public:
 signals:
     void homeFromLandingClicked();
     void settingsClicked();
+    void predictionsClicked();
 
     void dateTimeUpdate();
 
@@ -27,7 +28,9 @@ private slots:
     void on_backToHome_clicked();
     void on_settingsButton_clicked();
 
-    void updateDateTime();
+    void updateLandingDateTime();
+
+    void on_predictionsButton_clicked();
 
 private:
     Ui::p2Landing *ui;

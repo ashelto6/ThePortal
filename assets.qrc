@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/pythonScripts">
+        <file>weatherDatatoCSV.py</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file>wallpaper3.jpg</file>
+        <file>wallpaper2.png</file>
+        <file>wallpaper.jpg</file>
+        <file>settings-icon.jpg</file>
+        <file>lock-icon.png</file>
+        <file>home.png</file>
+        <file>back-button.png</file>
+    </qresource>
+</RCC>
