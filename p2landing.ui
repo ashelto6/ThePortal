@@ -81,7 +81,7 @@ QDateTimeEdit::drop-down {
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>80</x>
      <y>40</y>
      <width>861</width>
      <height>471</height>
@@ -113,7 +113,7 @@ QDateTimeEdit::drop-down {
         <item>
          <widget class="QPushButton" name="settingsButton">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>

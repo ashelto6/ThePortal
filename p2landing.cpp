@@ -47,8 +47,8 @@ void p2Landing::setIcons()
     ui->backToHome->setIconSize(QSize(65, 65));
 
     //setting app icons
-    ui->settingsButton->setIcon(QIcon("/home/pi/portalImages/settings-icon.jpg"));
-    ui->settingsButton->setIconSize(QSize(115, 115));
+    ui->settingsButton->setIcon(QIcon("/home/pi/portalImages/settings-icon.png"));
+    ui->settingsButton->setIconSize(QSize(100, 100));
 
     //predictions app icons
     ui->predictionsButton->setIcon(QIcon("/home/pi/portalImages/predictions-icon.png"));

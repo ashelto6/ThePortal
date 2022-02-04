@@ -26,11 +26,10 @@ signals:
 
 private slots:
     void on_backToHome_clicked();
+    void on_predictionsButton_clicked();
     void on_settingsButton_clicked();
 
     void updateLandingDateTime();
-
-    void on_predictionsButton_clicked();
 
 private:
     Ui::p2Landing *ui;
