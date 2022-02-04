@@ -49,10 +49,12 @@ void p2Landing::setIcons()
     //setting app icons
     ui->settingsButton->setIcon(QIcon("/home/pi/portalImages/settings-icon.png"));
     ui->settingsButton->setIconSize(QSize(100, 100));
+    ui->settingsLabel->setStyleSheet("color: white");
 
     //predictions app icons
     ui->predictionsButton->setIcon(QIcon("/home/pi/portalImages/predictions-icon.png"));
     ui->predictionsButton->setIconSize(QSize(100, 100));
+    ui->predictionsLabel->setStyleSheet("color: white");
 }
 
 

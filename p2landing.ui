@@ -43,7 +43,6 @@ QDateTimeEdit::drop-down {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-
 </string>
   </property>
   <widget class="QDateTimeEdit" name="dateTimeEdit">
