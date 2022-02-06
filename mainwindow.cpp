@@ -4,7 +4,6 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
     //adding pages to stacked widget
     ui->stackedWidget->addWidget(&_Home);
     ui->stackedWidget->addWidget(&_Page2);

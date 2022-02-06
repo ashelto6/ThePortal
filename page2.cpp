@@ -12,6 +12,7 @@ Page2::Page2(QWidget *parent) : QWidget(parent), ui(new Ui::Page2)
 
     //connections for returning to the landing page from an app
     connect(&_p2Settings, SIGNAL(backToLandingFromSettingsClicked()), this, SLOT(toLanding()));
+    connect(&_p2Predictions, SIGNAL(backToLandingFromPredictions()), this, SLOT(toLanding()));
 
     //connections for going into an app
     connect(&_p2Landing, SIGNAL(settingsClicked()), this, SLOT(toSettings()));
@@ -20,6 +21,7 @@ Page2::Page2(QWidget *parent) : QWidget(parent), ui(new Ui::Page2)
     //connections for going home from a page of page2 stackedwidget
     connect(&_p2Landing, SIGNAL(homeFromLandingClicked()), this, SLOT(backHome()));
     connect(&_p2Settings, SIGNAL(homeFromSettingsClicked()), this, SLOT(backHome()));
+    connect(&_p2Predictions, SIGNAL(homeFromPredictionsClicked()), this, SLOT(backHome()));
 
     //connections for changing wallpapers
     connect(&_p2Settings, SIGNAL(wallpaper1Clicked()), this, SLOT(setWallpaper1()));
