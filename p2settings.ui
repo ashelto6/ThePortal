@@ -531,7 +531,7 @@ QDateTimeEdit::drop-down {
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="rebootButton">
      <property name="geometry">
       <rect>
        <x>320</x>
@@ -544,7 +544,7 @@ QDateTimeEdit::drop-down {
       <string>reboot</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="shutdownButton">
      <property name="geometry">
       <rect>
        <x>70</x>
@@ -557,7 +557,7 @@ QDateTimeEdit::drop-down {
       <string>shutdown</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="closePortalButton">
      <property name="geometry">
       <rect>
        <x>570</x>

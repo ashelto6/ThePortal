@@ -231,21 +231,19 @@ void p2Settings::resetSettingsButtons()
     ui->networkSettingsButton_2->setStyleSheet("background-color: white; color: black");
 }
 
-void p2Settings::on_pushButton_clicked()
+void p2Settings::on_rebootButton_clicked()
 {
-
     QProcess process;
     process.startDetached("reboot", QStringList({}));
-
 }
 
-void p2Settings::on_pushButton_2_clicked()
+void p2Settings::on_shutdownButton_clicked()
 {
     QProcess process;
     process.startDetached("shutdown -P now", QStringList({}));
 }
 
-void p2Settings::on_pushButton_3_clicked()
+void p2Settings::on_closePortalButton_clicked()
 {
     exit(0);
 }

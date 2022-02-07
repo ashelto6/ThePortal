@@ -49,11 +49,9 @@ private slots:
     void on_securitySettingsButton_2_clicked();
     void on_networkSettingsButton_2_clicked();
 
-    void on_pushButton_clicked();
-
-    void on_pushButton_2_clicked();
-
-    void on_pushButton_3_clicked();
+    void on_rebootButton_clicked();
+    void on_shutdownButton_clicked();
+    void on_closePortalButton_clicked();
 
 private:
     Ui::p2Settings *ui;
