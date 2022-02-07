@@ -53,49 +53,17 @@ QDateTimeEdit::drop-down {
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>-10</y>
+     <y>30</y>
      <width>731</width>
-     <height>631</height>
+     <height>491</height>
     </rect>
    </property>
    <widget class="QWidget" name="page2Settings">
-    <widget class="QPushButton" name="backToHome">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>540</y>
-       <width>71</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QDateTimeEdit" name="dateTimeEdit">
-     <property name="geometry">
-      <rect>
-       <x>590</x>
-       <y>10</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-     <property name="calendarPopup">
-      <bool>false</bool>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>300</y>
+       <y>240</y>
        <width>501</width>
        <height>41</height>
       </rect>
@@ -116,7 +84,7 @@ QDateTimeEdit::drop-down {
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>100</y>
+       <y>60</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -125,24 +93,11 @@ QDateTimeEdit::drop-down {
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="Line" name="line_4">
-     <property name="geometry">
-      <rect>
-       <x>-10</x>
-       <y>10</y>
-       <width>20</width>
-       <height>631</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-    </widget>
     <widget class="Line" name="line_6">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>510</y>
+       <y>480</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -153,43 +108,11 @@ QDateTimeEdit::drop-down {
     </widget>
    </widget>
    <widget class="QWidget" name="page2SettingsDisplay">
-    <widget class="QDateTimeEdit" name="dateTimeEdit_2">
-     <property name="geometry">
-      <rect>
-       <x>590</x>
-       <y>10</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
-     </property>
-     <property name="readOnly">
-      <bool>true</bool>
-     </property>
-     <property name="calendarPopup">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="backToHome_2">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>540</y>
-       <width>71</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
        <x>250</x>
-       <y>50</y>
+       <y>10</y>
        <width>221</width>
        <height>41</height>
       </rect>
@@ -210,7 +133,7 @@ QDateTimeEdit::drop-down {
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>100</y>
+       <y>60</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -232,24 +155,11 @@ QDateTimeEdit::drop-down {
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="Line" name="line_7">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>510</y>
-       <width>731</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
     <widget class="QWidget" name="horizontalLayoutWidget_2">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>160</y>
+       <y>120</y>
        <width>731</width>
        <height>181</height>
       </rect>
@@ -408,7 +318,7 @@ QDateTimeEdit::drop-down {
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>130</y>
+       <y>90</y>
        <width>111</width>
        <height>41</height>
       </rect>
@@ -422,23 +332,26 @@ QDateTimeEdit::drop-down {
       <string>WALLPAPER</string>
      </property>
     </widget>
-   </widget>
-   <widget class="QWidget" name="page2SettingsNetwork">
-    <widget class="QDateTimeEdit" name="dateTimeEdit_5">
+    <widget class="Line" name="line_17">
      <property name="geometry">
       <rect>
-       <x>590</x>
-       <y>10</y>
-       <width>201</width>
-       <height>31</height>
+       <x>0</x>
+       <y>480</y>
+       <width>731</width>
+       <height>20</height>
       </rect>
      </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
     </widget>
+   </widget>
+   <widget class="QWidget" name="page2SettingsNetwork">
     <widget class="Line" name="line_8">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>510</y>
+       <y>480</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -464,7 +377,7 @@ QDateTimeEdit::drop-down {
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>100</y>
+       <y>60</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -473,24 +386,11 @@ QDateTimeEdit::drop-down {
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="backToHome_3">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>540</y>
-       <width>71</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
        <x>250</x>
-       <y>50</y>
+       <y>10</y>
        <width>221</width>
        <height>41</height>
       </rect>
@@ -509,21 +409,11 @@ QDateTimeEdit::drop-down {
     </widget>
    </widget>
    <widget class="QWidget" name="page2SettingsSecurity">
-    <widget class="QDateTimeEdit" name="dateTimeEdit_4">
-     <property name="geometry">
-      <rect>
-       <x>590</x>
-       <y>10</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="Line" name="line_11">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>510</y>
+       <y>480</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -536,7 +426,7 @@ QDateTimeEdit::drop-down {
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>100</y>
+       <y>60</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -558,24 +448,11 @@ QDateTimeEdit::drop-down {
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="backToHome_4">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>540</y>
-       <width>71</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
        <x>250</x>
-       <y>50</y>
+       <y>10</y>
        <width>221</width>
        <height>41</height>
       </rect>
@@ -594,21 +471,11 @@ QDateTimeEdit::drop-down {
     </widget>
    </widget>
    <widget class="QWidget" name="page2SettingsSystem">
-    <widget class="QDateTimeEdit" name="dateTimeEdit_3">
-     <property name="geometry">
-      <rect>
-       <x>590</x>
-       <y>10</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="Line" name="line_14">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>510</y>
+       <y>480</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -621,7 +488,7 @@ QDateTimeEdit::drop-down {
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>100</y>
+       <y>60</y>
        <width>731</width>
        <height>20</height>
       </rect>
@@ -634,33 +501,20 @@ QDateTimeEdit::drop-down {
      <property name="geometry">
       <rect>
        <x>-10</x>
-       <y>10</y>
+       <y>-30</y>
        <width>20</width>
-       <height>621</height>
+       <height>661</height>
       </rect>
      </property>
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="backToHome_5">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>540</y>
-       <width>71</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
        <x>250</x>
-       <y>50</y>
+       <y>10</y>
        <width>221</width>
        <height>41</height>
       </rect>
@@ -677,152 +531,46 @@ QDateTimeEdit::drop-down {
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>290</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>reboot</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>290</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>shutdown</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>290</y>
+       <width>89</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>close portal</string>
+     </property>
+    </widget>
    </widget>
-  </widget>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>110</y>
-     <width>301</width>
-     <height>391</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <property name="spacing">
-     <number>0</number>
-    </property>
-    <item>
-     <widget class="QPushButton" name="displaySettingsButton">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>300</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Display</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="networkSettingsButton">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>300</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Network</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="securitySettingsButton">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>300</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Security</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="systemSettingsButton">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>300</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>System</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>40</y>
-     <width>221</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Settings</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="backToLanding">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>30</y>
-     <width>71</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
   </widget>
   <widget class="Line" name="line_5">
    <property name="geometry">
@@ -837,6 +585,206 @@ QDateTimeEdit::drop-down {
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1027</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QDateTimeEdit" name="dateTimeEdit">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>0</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Settings</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backToLanding">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backToHome">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>530</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>301</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="displaySettingsButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Display</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="networkSettingsButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Network</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="securitySettingsButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Security</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="systemSettingsButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>System</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="Line" name="line_18">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>0</y>
+      <width>20</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <zorder>line_5</zorder>
+  <zorder>frame</zorder>
+  <zorder>stackedWidget</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -199,9 +199,9 @@ QDateTimeEdit::drop-down {
    <property name="geometry">
     <rect>
      <x>-1</x>
-     <y>79</y>
+     <y>129</y>
      <width>1027</width>
-     <height>541</height>
+     <height>401</height>
     </rect>
    </property>
    <widget class="QWidget" name="Landing">
@@ -267,8 +267,6 @@ QDateTimeEdit::drop-down {
    <widget class="QWidget" name="predSettings"/>
    <widget class="QWidget" name="page_7"/>
   </widget>
-  <zorder>stackedWidget</zorder>
-  <zorder>frame</zorder>
  </widget>
  <resources/>
  <connections/>

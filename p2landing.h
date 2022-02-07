@@ -2,6 +2,7 @@
 #define P2LANDING_H
 
 #include <QWidget>
+#include <QProcess>
 
 #include "home.h"
 

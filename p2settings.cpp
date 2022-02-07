@@ -1,6 +1,12 @@
 #include "p2settings.h"
 #include "ui_p2settings.h"
 
+#include <unistd.h>
+#include <linux/reboot.h>
+#include <sys/reboot.h>
+
+
+
 p2Settings::p2Settings(QWidget *parent) : QWidget(parent), ui(new Ui::p2Settings)
 {
     ui->setupUi(this);
@@ -32,54 +38,30 @@ void p2Settings::on_backToHome_clicked()
     emit homeFromSettingsClicked();
 }
 
-void p2Settings::on_backToHome_2_clicked()
-{
-    emit homeFromSettingsClicked();
-}
-
-void p2Settings::on_backToHome_3_clicked()
-{
-    emit homeFromSettingsClicked();
-}
-
-void p2Settings::on_backToHome_4_clicked()
-{
-    emit homeFromSettingsClicked();
-}
-
-void p2Settings::on_backToHome_5_clicked()
-{
-    emit homeFromSettingsClicked();
-}
-
 void p2Settings::updateSettingsDateTime()
 {
     ui->dateTimeEdit->setDateTime(QDateTime::currentDateTime());
-    ui->dateTimeEdit_2->setDateTime(QDateTime::currentDateTime());
-    ui->dateTimeEdit_3->setDateTime(QDateTime::currentDateTime());
-    ui->dateTimeEdit_4->setDateTime(QDateTime::currentDateTime());
-    ui->dateTimeEdit_5->setDateTime(QDateTime::currentDateTime());
 }
 
-void p2Settings::on_displaySettingsButton_clicked()
+void p2Settings::on_displaySettingsButton_2_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
     setSettingsTypeButton(0);
 }
 
-void p2Settings::on_networkSettingsButton_clicked()
+void p2Settings::on_networkSettingsButton_2_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
     setSettingsTypeButton(1);
 }
 
-void p2Settings::on_securitySettingsButton_clicked()
+void p2Settings::on_securitySettingsButton_2_clicked()
 {
     ui->stackedWidget->setCurrentIndex(3);
     setSettingsTypeButton(2);
 }
 
-void p2Settings::on_systemSettingsButton_clicked()
+void p2Settings::on_systemSettingsButton_2_clicked()
 {
     ui->stackedWidget->setCurrentIndex(4);
     setSettingsTypeButton(3);
@@ -129,66 +111,66 @@ void p2Settings::setSettingsTypeButton(int value)
     if( value == 0 )
     {
         //changed pressed button background to blue, white text
-        ui->displaySettingsButton->setAutoFillBackground(true);
-        ui->displaySettingsButton->setStyleSheet("background-color: blue; color: white");
+        ui->displaySettingsButton_2->setAutoFillBackground(true);
+        ui->displaySettingsButton_2->setStyleSheet("background-color: blue; color: white");
 
         //change other buttons to white background. black text
-        ui->systemSettingsButton->setAutoFillBackground(true);
-        ui->systemSettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->systemSettingsButton_2->setAutoFillBackground(true);
+        ui->systemSettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-        ui->securitySettingsButton->setAutoFillBackground(true);
-        ui->securitySettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->securitySettingsButton_2->setAutoFillBackground(true);
+        ui->securitySettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-        ui->networkSettingsButton->setAutoFillBackground(true);
-        ui->networkSettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->networkSettingsButton_2->setAutoFillBackground(true);
+        ui->networkSettingsButton_2->setStyleSheet("background-color: white; color: black");
     }
     else if( value == 1 )
     {
         //changed pressed button background to blue, white text
-        ui->networkSettingsButton->setAutoFillBackground(true);
-        ui->networkSettingsButton->setStyleSheet("background-color: blue; color: white");
+        ui->networkSettingsButton_2->setAutoFillBackground(true);
+        ui->networkSettingsButton_2->setStyleSheet("background-color: blue; color: white");
 
         //change other buttons to white background. black text
-        ui->systemSettingsButton->setAutoFillBackground(true);
-        ui->systemSettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->systemSettingsButton_2->setAutoFillBackground(true);
+        ui->systemSettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-        ui->displaySettingsButton->setAutoFillBackground(true);
-        ui->displaySettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->displaySettingsButton_2->setAutoFillBackground(true);
+        ui->displaySettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-        ui->securitySettingsButton->setAutoFillBackground(true);
-        ui->securitySettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->securitySettingsButton_2->setAutoFillBackground(true);
+        ui->securitySettingsButton_2->setStyleSheet("background-color: white; color: black");
     }
     else if( value == 2 )
     {
         //changed pressed button background to blue, white text
-        ui->securitySettingsButton->setAutoFillBackground(true);
-        ui->securitySettingsButton->setStyleSheet("background-color: blue; color: white");
+        ui->securitySettingsButton_2->setAutoFillBackground(true);
+        ui->securitySettingsButton_2->setStyleSheet("background-color: blue; color: white");
 
         //change other buttons to white background. black text
-        ui->displaySettingsButton->setAutoFillBackground(true);
-        ui->displaySettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->displaySettingsButton_2->setAutoFillBackground(true);
+        ui->displaySettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-        ui->systemSettingsButton->setAutoFillBackground(true);
-        ui->systemSettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->systemSettingsButton_2->setAutoFillBackground(true);
+        ui->systemSettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-        ui->networkSettingsButton->setAutoFillBackground(true);
-        ui->networkSettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->networkSettingsButton_2->setAutoFillBackground(true);
+        ui->networkSettingsButton_2->setStyleSheet("background-color: white; color: black");
     }
     else if( value == 3 )
     {
         //changed pressed button background to blue, white text
-        ui->systemSettingsButton->setAutoFillBackground(true);
-        ui->systemSettingsButton->setStyleSheet("background-color: blue; color: white");
+        ui->systemSettingsButton_2->setAutoFillBackground(true);
+        ui->systemSettingsButton_2->setStyleSheet("background-color: blue; color: white");
 
         //change other buttons to white background. black text
-        ui->displaySettingsButton->setAutoFillBackground(true);
-        ui->displaySettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->displaySettingsButton_2->setAutoFillBackground(true);
+        ui->displaySettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-        ui->securitySettingsButton->setAutoFillBackground(true);
-        ui->securitySettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->securitySettingsButton_2->setAutoFillBackground(true);
+        ui->securitySettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-        ui->networkSettingsButton->setAutoFillBackground(true);
-        ui->networkSettingsButton->setStyleSheet("background-color: white; color: black");
+        ui->networkSettingsButton_2->setAutoFillBackground(true);
+        ui->networkSettingsButton_2->setStyleSheet("background-color: white; color: black");
     }
 }
 
@@ -200,18 +182,6 @@ void p2Settings::setIcons()
 
     ui->backToHome->setIcon(QIcon("/home/pi/portalImages/home.png"));
     ui->backToHome->setIconSize(QSize(65, 65));
-
-    ui->backToHome_2->setIcon(QIcon("/home/pi/portalImages/home.png"));
-    ui->backToHome_2->setIconSize(QSize(65, 65));
-
-    ui->backToHome_3->setIcon(QIcon("/home/pi/portalImages/home.png"));
-    ui->backToHome_3->setIconSize(QSize(65, 65));
-
-    ui->backToHome_4->setIcon(QIcon("/home/pi/portalImages/home.png"));
-    ui->backToHome_4->setIconSize(QSize(65, 65));
-
-    ui->backToHome_5->setIcon(QIcon("/home/pi/portalImages/home.png"));
-    ui->backToHome_5->setIconSize(QSize(65, 65));
 
     //setting wallpaper settings images
     ui->wallpaper1Button->setIcon(QIcon("/home/pi/portalImages/wallpaper1.jpg"));
@@ -248,15 +218,34 @@ void p2Settings::setWallpaperLabel(int value)
 
 void p2Settings::resetSettingsButtons()
 {
-    ui->displaySettingsButton->setAutoFillBackground(true);
-    ui->displaySettingsButton->setStyleSheet("background-color: white; color: black");
+    ui->displaySettingsButton_2->setAutoFillBackground(true);
+    ui->displaySettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-    ui->systemSettingsButton->setAutoFillBackground(true);
-    ui->systemSettingsButton->setStyleSheet("background-color: white; color: black");
+    ui->systemSettingsButton_2->setAutoFillBackground(true);
+    ui->systemSettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-    ui->securitySettingsButton->setAutoFillBackground(true);
-    ui->securitySettingsButton->setStyleSheet("background-color: white; color: black");
+    ui->securitySettingsButton_2->setAutoFillBackground(true);
+    ui->securitySettingsButton_2->setStyleSheet("background-color: white; color: black");
 
-    ui->networkSettingsButton->setAutoFillBackground(true);
-    ui->networkSettingsButton->setStyleSheet("background-color: white; color: black");
+    ui->networkSettingsButton_2->setAutoFillBackground(true);
+    ui->networkSettingsButton_2->setStyleSheet("background-color: white; color: black");
+}
+
+void p2Settings::on_pushButton_clicked()
+{
+
+    QProcess process;
+    process.startDetached("reboot", QStringList({}));
+
+}
+
+void p2Settings::on_pushButton_2_clicked()
+{
+    QProcess process;
+    process.startDetached("shutdown -P now", QStringList({}));
+}
+
+void p2Settings::on_pushButton_3_clicked()
+{
+    exit(0);
 }

@@ -33,10 +33,6 @@ private slots:
     void on_backToLanding_clicked();
 
     void on_backToHome_clicked();
-    void on_backToHome_2_clicked();
-    void on_backToHome_3_clicked();
-    void on_backToHome_4_clicked();
-    void on_backToHome_5_clicked();
 
     void on_wallpaper1Button_clicked();
     void on_wallpaper2Button_clicked();
@@ -48,10 +44,16 @@ private slots:
 
     void updateSettingsDateTime();
 
-    void on_displaySettingsButton_clicked();
-    void on_systemSettingsButton_clicked();
-    void on_securitySettingsButton_clicked();
-    void on_networkSettingsButton_clicked();
+    void on_displaySettingsButton_2_clicked();
+    void on_systemSettingsButton_2_clicked();
+    void on_securitySettingsButton_2_clicked();
+    void on_networkSettingsButton_2_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::p2Settings *ui;
