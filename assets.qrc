@@ -1,6 +1,9 @@
 <RCC>
     <qresource prefix="/pythonScripts">
         <file>weatherDatatoCSV.py</file>
+        <file>TitanicPredictions.py</file>
+        <file>IrisPredictions.py</file>
+        <file>BostonHomePredictions.py</file>
     </qresource>
     <qresource prefix="/img">
         <file>wallpaper3.jpg</file>
@@ -11,5 +14,6 @@
         <file>back-button.png</file>
         <file>predictions-icon.png</file>
         <file>settings-icon.png</file>
+        <file>weather-icon.png</file>
     </qresource>
 </RCC>

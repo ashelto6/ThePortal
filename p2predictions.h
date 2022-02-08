@@ -24,18 +24,23 @@ signals:
 private slots:
     void on_minimizeButton_clicked();
     void on_closeButton_clicked();
+    void on_backToHome_clicked();
+    void on_SubmitButton_clicked();
+    void on_resetButton_clicked();
 
     void on_IrisNavButton_clicked();
     void on_TitanicNavButton_clicked();
     void on_BostonNavButton_clicked();
-
-    void on_backToHome_clicked();
 
     void updatePredictionsDateTime();
 
 private:
     Ui::p2Predictions *ui;
     p2Landing _p2Landing;
+
+    void callIrisScript(double, double, double, double);
+    void setIrisSpinBoxes();
+    void resetIrisSpinBoxes();
 };
 
 #endif // P2PREDICTIONS_H
