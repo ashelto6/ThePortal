@@ -67,7 +67,11 @@ void p2Predictions::on_SubmitButton_clicked()
 
 void p2Predictions::callIrisScript(double sepalLength, double sepalWidth, double petalLength, double petalWidth)
 {
-    QStringList params = QStringList() << "/home/pi/Documents/IrisPredictions.py" << QString::number(sepalLength) << QString::number(sepalWidth) << QString::number(petalLength) << QString::number(petalWidth);
+    QStringList params = QStringList() << "/home/pi/Documents/IrisPredictions.py"
+                                       << QString::number(sepalLength)
+                                       << QString::number(sepalWidth)
+                                       << QString::number(petalLength)
+                                       << QString::number(petalWidth);
     QProcess *process = new QProcess();
     process->start("python3", params);
     process->waitForFinished(-1);
