@@ -14,6 +14,7 @@
 //#include <boost/algorithm/string.hpp>
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 
 void readParams(QMap<QString, QString>& params)
 {
@@ -34,6 +35,22 @@ void readParams(QMap<QString, QString>& params)
 }
 
 /*
+void writesum(QStringList args){
+    QFile file("/home/pi/log1.txt");
+    if(!file.open(QIODevice::WriteOnly)) {
+            QMessageBox::information(0, "error", file.errorString());
+        }
+    QTextStream out(&file);
+    for(int i = 0; i < args.size() ; ++i )
+        out << args[i] << "\n";
+
+
+
+    file.close();
+}
+*/
+
+/*
 void eigenMatrixToFile(const Eigen::MatrixXd& M, QString filename)
 {
     QFile file( filename );
@@ -52,13 +69,21 @@ void eigenMatrixToFile(const Eigen::MatrixXd& M, QString filename)
 
 using Eigen::MatrixXd;
 */
-
+/*
+void toCons()
+{
+    std::cout << "not enough args.\n";
+}
+*/
 int main(int argc, char *argv[])
 {
     srand(time(nullptr));
     QMap<QString, QString> params;
 
     readParams(params);
+
+
+    //QMapIterator<QString, QString> i(params);
 
 /*  MatrixXd m(2,2);
     m(0,0) = 3;
@@ -85,7 +110,15 @@ int main(int argc, char *argv[])
     file.close();
 */
     QApplication a(argc, argv);
-
+    /*
+    QStringList args = QCoreApplication::arguments();
+    if (args.size() != 4)
+    {
+        toCons();
+        exit(1);
+    }
+    writesum(args);
+    */
     //removing cursor
     a.setOverrideCursor(QCursor(Qt::BlankCursor));
 

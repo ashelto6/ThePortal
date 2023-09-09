@@ -22,7 +22,7 @@ signals:
     void homeFromLandingClicked();
     void settingsClicked();
     void predictionsClicked();
-
+    void testClicked();
     void dateTimeUpdate();
 
 private slots:
@@ -31,6 +31,8 @@ private slots:
     void on_settingsButton_clicked();
 
     void updateLandingDateTime();
+
+    void on_app7Button_clicked();
 
 private:
     Ui::p2Landing *ui;

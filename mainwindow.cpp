@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <unistd.h>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -7,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     //adding pages to stacked widget
     ui->stackedWidget->addWidget(&_Home);
     ui->stackedWidget->addWidget(&_Page2);
+    ui->stackedWidget->addWidget(&_test);
+
 
     //connections for navigation buttons
     connect(&_Home, SIGNAL(nextClicked()), this, SLOT(goToNext()));
@@ -26,6 +29,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(&_Page2, SIGNAL(reWriteWp1Config()), this, SLOT(writeWp1Config()));
     connect(&_Page2, SIGNAL(reWriteWp2Config()), this, SLOT(writeWp2Config()));
     connect(&_Page2, SIGNAL(reWriteWp3Config()), this, SLOT(writeWp3Config()));
+
+    connect(&_test, SIGNAL(createPage()), this, SLOT(createPageNow()));
+    connect(this, SIGNAL(tester()), &_test, SLOT(getCount()));
+    connect(&_Home, SIGNAL(go()), this, SLOT(goBack()));
+    connect(&_Home, SIGNAL(createButton()), &_test, SLOT(LandingDateTime()));
+    //ui->stackedWidget->setCurrentIndex(2);
+
+
 }
 
  void MainWindow::setParams(QMap<QString, QString>& params)
@@ -158,6 +169,23 @@ void MainWindow::writeWp3Config()
     }
 }
 
+void MainWindow::changeToTest()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+
+}
+
+
+void MainWindow::goBack()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+
+}
+void MainWindow::createPageNow(int* ptr)
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
 void MainWindow::reWriteConfigFile()
 {
     QFile file("/home/pi/Documents/config.txt");
@@ -203,5 +231,6 @@ void MainWindow::setBackground(int value)
         ui->stackedWidget->widget(0)->setPalette(background);
     }
 }
+
 
 

@@ -7,6 +7,10 @@
 #include <QMessageBox>
 #include <QGraphicsDropShadowEffect>
 
+#include "globals.h"
+
+#include <pthread.h>
+
 namespace Ui {
 class Home;
 }
@@ -18,10 +22,16 @@ class Home : public QWidget
 public:
     explicit Home(QWidget *parent = nullptr);
     ~Home();
+    static void* relayThreadFn(void* arg);
+    void runThread();
 
 signals:
     void nextClicked();
     void newDateTime();
+    void newPage();
+    void createButton();
+    void go();
+    void send5();
 
 private slots:
     void on_changePage_clicked();
@@ -29,6 +39,15 @@ private slots:
     void on_dial_2_valueChanged(int value);
 
     void updateTime();
+    void createNewPage();
+
+    void onpushButtonclicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
 
 private:
     Ui::Home *ui;

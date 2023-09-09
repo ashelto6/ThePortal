@@ -13,6 +13,8 @@
 #include "page2.h"
 #include "home.h"
 #include "p2settings.h"
+#include "p2landing.h"
+#include "test.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -39,11 +41,36 @@ private slots:
     void writeWp1Config();
     void writeWp2Config();
     void writeWp3Config();
+    void changeToTest();
+    void createPageNow(int*);
+    void goBack();
 
 signals:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     void wallpaperConfig0();
     void wallpaperConfig1();
     void wallpaperConfig2();
+    void tester(int);
+
 
 private:
     Ui::MainWindow *ui;
@@ -51,6 +78,9 @@ private:
     p2Settings _p2Settings;
     Page2 _Page2;
     Home _Home;
+    test _test;
+    int* count;
+    p2Landing _p2Landing;
 
     void reWriteConfigFile();
     void setBackground(int);

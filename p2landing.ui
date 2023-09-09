@@ -189,7 +189,7 @@ QDateTimeEdit::drop-down {
            </font>
           </property>
           <property name="text">
-           <string/>
+           <string>test</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignHCenter|Qt::AlignTop</set>

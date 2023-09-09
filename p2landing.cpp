@@ -58,3 +58,8 @@ void p2Landing::setIcons()
 }
 
 
+
+void p2Landing::on_app7Button_clicked()
+{
+    emit testClicked();
+}

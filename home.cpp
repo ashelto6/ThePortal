@@ -25,6 +25,16 @@ Home::Home(QWidget *parent) : QWidget(parent), ui(new Ui::Home)
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(updateTime()));
     timer->start(1000);
+
+        pthread_t newThread;
+
+        pthread_create(&newThread, nullptr, relayThreadFn, this);
+
+
+
+
+
+
 }
 
 Home::~Home()
@@ -99,4 +109,54 @@ void Home::on_dial_2_valueChanged(int value)
         _unlocked[1] = false;
         ui->changePage->setIcon(QIcon("/home/pi/portalImages/lock-icon.png"));
     }
+}
+
+void Home::onpushButtonclicked()
+{/*
+    QPushButton* page = new QPushButton(this);
+
+    page->setObjectName(QString::fromUtf8("Page"));
+    page->setGeometry(QRect(300, 10, 71, 61));
+    page->setText("Test");
+    page->show();
+    */
+
+}
+
+void* Home::relayThreadFn(void* arg)
+{
+    Home *m_thread = (Home*)arg;
+    m_thread->runThread();
+    return (void*)0;
+}
+
+void Home::runThread()
+{
+    createNewPage();
+}
+
+void Home::createNewPage()
+{
+
+    connect(this, &Home::createButton, this, &Home::onpushButtonclicked);
+}
+
+void Home::on_pushButton_2_clicked()
+{
+    emit createButton();
+}
+
+
+void Home::on_pushButton_3_clicked()
+{
+    GLOBALS::instance()->setNum(5);
+    emit createButton();
+
+    emit go();
+}
+
+void Home::on_pushButton_4_clicked()
+{
+    GLOBALS::instance()->setNum(5);
+    emit send5();
 }

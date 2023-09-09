@@ -16,29 +16,37 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    form.cpp \
+    globals.cpp \
     home.cpp \
     main.cpp \
     mainwindow.cpp \
     p2landing.cpp \
     p2predictions.cpp \
     p2settings.cpp \
-    page2.cpp
+    page2.cpp \
+    test.cpp
 
 HEADERS += \
+    form.h \
+    globals.h \
     home.h \
     mainwindow.h \
     p2landing.h \
     p2predictions.h \
     p2settings.h \
-    page2.h
+    page2.h \
+    test.h
 
 FORMS += \
+    form.ui \
     home.ui \
     mainwindow.ui \
     p2landing.ui \
     p2predictions.ui \
     p2settings.ui \
-    page2.ui
+    page2.ui \
+    test.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
