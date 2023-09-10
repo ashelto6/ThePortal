@@ -3,7 +3,7 @@
  <comment/>
  <exportmacro/>
  <class>Template</class>
- <widget class="QWidget" name="Form">
+ <widget class="QWidget" name="Template">
   <property name="geometry">
    <rect>
     <x>0</x>

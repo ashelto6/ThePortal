@@ -25,7 +25,8 @@ SOURCES += \
     p2predictions.cpp \
     p2settings.cpp \
     page2.cpp \
-    test.cpp
+    test.cpp \
+    template.cpp
 
 HEADERS += \
     form.h \
@@ -36,7 +37,8 @@ HEADERS += \
     p2predictions.h \
     p2settings.h \
     page2.h \
-    test.h
+    test.h \
+    template.h
 
 FORMS += \
     form.ui \
@@ -46,7 +48,8 @@ FORMS += \
     p2predictions.ui \
     p2settings.ui \
     page2.ui \
-    test.ui
+    test.ui \
+    template.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
